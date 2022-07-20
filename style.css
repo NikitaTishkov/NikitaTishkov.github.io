@@ -1,0 +1,8 @@
+body {
+    background: var(--tg-theme-bg-color);
+
+}
+body * {
+    color: var(--tg-theme-text-color);
+    
+}
