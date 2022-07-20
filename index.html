@@ -11,46 +11,7 @@
     <body>
         <div id="root"></div>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>\
-        <script src="https://unpkg.com/vue@next"></script>
-        <script src="https://unpkg.com/vue-select@3.0.0"></script>
-        <script>
-            const Telegram = window.Telegram.WebApp;
-            const App = {
-                created() {
-
-                    this.telegram = Telegram
-                    this.text = "Hello!"
-                    if (Telegram.initDataUnsafe.user){
-                        this.user = Telegram.initDataUnsafe.user
-                    }
-
-                    setTimeout(()=>{
-                        this.loading = false
-                    },1000)
-
-                },
-                data() {
-                    return {
-                        telegram: null,
-                        user: null
-                    }
-                },
-                template:
-                    <div >
-                        <h2>Information about user </h2>
-                        <div v-if="user" class="user">
-                            <p v-for="(item,index) in user" >
-                                <b>{{ index }}:</b> {{ item }}
-                            </p>
-                        </div>
-                    </div>
-
-            }
-            window.addEventListener('load', () => {
-                const app = Vue.createApp(App)
-                app.mount('#root')
-            })
-
-        </script>
+        
+        <h1> Hello !!! I`m your shop</h1>
     </body>
 </html>
